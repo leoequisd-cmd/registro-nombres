@@ -2,7 +2,7 @@ FROM dunglas/frankenphp:latest-php8.2
 
 RUN docker-php-ext-install mysqli pdo_mysql
 
-WORKDIR /app
+WORKDIR /app/public
 
 COPY . .
 
