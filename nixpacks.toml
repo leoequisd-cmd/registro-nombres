@@ -1,2 +1,0 @@
-[phases.setup]
-nixPkgs = ["frankenphp", "php82Extensions.mysqli", "php82Extensions.pdo_mysql"]
