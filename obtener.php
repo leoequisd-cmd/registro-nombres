@@ -13,7 +13,7 @@ $conn = new mysqli($host, $usuario, $password, $base, $puerto);
 $conn->set_charset("utf8mb4");
 
 if ($conn->connect_error) {
-    echo "[]";
+    echo json_encode(["error" => $conn->connect_error]);
     exit();
 }
 
