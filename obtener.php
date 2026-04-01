@@ -1,4 +1,9 @@
-<?php
+<?php   
+
+if (!extension_loaded('mysqli')) {
+    echo json_encode(["error" => "mysqli no disponible"]);
+    exit();
+}
 error_reporting(0);
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
